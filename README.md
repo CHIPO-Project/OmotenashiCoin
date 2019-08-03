@@ -1,0 +1,2 @@
+# OmotenashiCoin
+OmotenashiCoin Core repository
