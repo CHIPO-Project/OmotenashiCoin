@@ -1,0 +1,8 @@
+/usr/bin/omotenashicoin-cli		--	gen_context(system_u:object_r:omotenashicoin_exec_t,s0)
+/usr/sbin/omotenashicoind		--	gen_context(system_u:object_r:omotenashicoin_exec_t,s0)
+/usr/lib(64)?/omotenashicoin/omotenashicoind		--	gen_context(system_u:object_r:omotenashicoin_exec_t,s0)
+
+/etc/omotenashicoin(/.*)?		gen_context(system_u:object_r:omotenashicoin_conf_t,s0)
+/var/lib/omotenashicoin(/.*)?		gen_context(system_u:object_r:omotenashicoin_var_lib_t,s0)
+
+(/var)?/run/omotenashicoind(/.*)?   gen_context(system_u:object_r:omotenashicoin_var_run_t,s0)

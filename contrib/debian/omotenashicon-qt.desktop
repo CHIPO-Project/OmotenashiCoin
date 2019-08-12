@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=OmotenashiCoin Core
+Comment=OmotenashiCoin P2P Cryptocurrency
+Comment[fr]=OmotenashiCoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=OmotenashiCoin, eşten eşe kriptografik sanal para birimi
+Exec=omotenashicoin-qt %u
+Terminal=false
+Type=Application
+Icon=omotenashicoin128
+MimeType=x-scheme-handler/omotenashicoin;
+Categories=Office;Finance;
+StartupWMClass=OmotenashiCoin-qt

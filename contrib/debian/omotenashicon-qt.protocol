@@ -1,0 +1,11 @@
+[Protocol]
+exec=omotenashicoin-qt '%u'
+protocol=omotenashicoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

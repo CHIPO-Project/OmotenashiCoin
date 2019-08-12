@@ -1,0 +1,3 @@
+usr/local/bin/omotenashicoind usr/bin
+usr/local/bin/omotenashicoin-cli usr/bin
+debian/examples/omotenashicoin.conf etc/omotenashicoin
