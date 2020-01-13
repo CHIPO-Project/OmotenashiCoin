@@ -68,14 +68,17 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
                 (   10000,       uint256("0000000000001b6fa55c8c68e707590ec9f9be833c208ae4a6608a93f69f50ab"))
                 (   15000,       uint256("00000000000838a23498c097805a25c5bd013a2c9b46b00fd908a99d83ba86d9"))
                 (   20000,       uint256("000000000012920fd392d9495aa736a3feb7b6f17181d79decf8d0f6af295686"))
+                (   50000,       uint256("000000000006d20d6d52acb913ecf1d4e8c5628da593cfca7a5b4a1bac568242"))
+                (   95000,       uint256("000000000007f8ceb7ed33631926be53071c5c4629f33c6e6bea78ccdfabe33e"))
+                (  141429,       uint256("0000000000057acfd7e79756d001935582d92812496be9decffbaed7b1702ab9"))
                 
                 
         ;
 
 static const Checkpoints::CCheckpointData data = {
         &mapCheckpoints,
-        1566686356, // * UNIX timestamp of last checkpoint block
-        20563,       // * total number of transactions between genesis and last checkpoint
+        1578204646, // * UNIX timestamp of last checkpoint block
+        145866,       // * total number of transactions between genesis and last checkpoint
                     //   (the tx=... number in the SetBestChain debug.log lines)
         2000        // * estimated number of transactions per day after checkpoint
 };
@@ -255,8 +258,8 @@ public:
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 1; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nMaxMoneyOut = 1000000000 * COIN;
-        nZerocoinStartHeight = 250;
-        nZerocoinStartTime = 1546300800; // Saturday, Jan 1, 2019 00:00:00 AM (GMT)
+        nZerocoinStartHeight = std::numeric_limits<int>::max();         // DISABLED FOR NOW TODO Zerocoin start height
+        nZerocoinStartTime = 4102444799;
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = 1500; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = 891737; //First block that bad serials emerged (currently we do not have any) *** TODO ***
@@ -272,7 +275,8 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        vSeeds.push_back(CDNSSeedData("167.179.73.101", "167.179.73.101"));
+        vSeeds.push_back(CDNSSeedData("66.42.57.23", "66.42.57.23"));
+        vSeeds.push_back(CDNSSeedData("198.13.59.12", "198.13.59.12"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 83);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 18);
