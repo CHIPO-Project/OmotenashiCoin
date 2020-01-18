@@ -253,18 +253,19 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // OmotenashiCoin: 1 day
         nTargetSpacing = 1 * 60;  // OmotenashiCoin: 2 minutes
-        nLastPOWBlockOffset = 3;
+        nLastPOWBlockOffset = 99;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 1; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nMaxMoneyOut = 1000000000 * COIN;
+
         nZerocoinStartHeight = std::numeric_limits<int>::max();         // DISABLED FOR NOW TODO Zerocoin start height
-        nZerocoinStartTime = 4102444799;
-        nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
-        nBlockRecalculateAccumulators = 1500; //Trigger a recalculation of accumulators
-        nBlockFirstFraudulent = 891737; //First block that bad serials emerged (currently we do not have any) *** TODO ***
-        nBlockLastGoodCheckpoint = 1001; //Last valid accumulator checkpoint (currently we do not have any) *** TODO ***
-        nBlockEnforceInvalidUTXO = 1600; //Start enforcing the invalid UTXO's
+        nZerocoinStartTime = 4102444799;        // off 2099/12/31 not supported.
+        nBlockEnforceSerialRange = 1;           // Enforce serial range starting this block
+        nBlockRecalculateAccumulators = std::numeric_limits<int>::max(); // Trigger a recalculation of accumulators
+        nBlockFirstFraudulent = std::numeric_limits<int>::max();           // 1110; //First block that bad serials emerged (currently we do not have any) *** TODO ***
+        nBlockLastGoodCheckpoint = std::numeric_limits<int>::max();        // Last valid accumulator checkpoint (currently we do not have any) *** TODO ***
+        nBlockEnforceInvalidUTXO = 5;        // Start enforcing the invalid UTXO's
 
         genesis.nTime = 1562394946;
         genesis.nNonce = 2709267;
