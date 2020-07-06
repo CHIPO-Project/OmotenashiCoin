@@ -14,6 +14,25 @@ the usage of the absolute path.
 
 * Build tested on Ubuntu 14.04 64-bit and Ubuntu 18.04 (Windows10/WSL Ubuntu).
 
+To Install Basic modules
+---------------------
+Ubuntu 18.04
+```bash
+sudo apt-get install libdb-dev libdb++-dev libboost-all-dev libminiupnpc-dev libminiupnpc-dev libevent-dev libcrypto++-dev libgmp3-dev  build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev git automake build-essential libtool autotools-dev autoconf pkg-config libssl-dev libboost-all-dev 
+sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
+sudo apt-get install libboost-all-dev
+
+sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install libminiupnpc-dev
+
+sudo apt-get install libdb4.8-dev -y
+sudo apt-get install libdb4.8++-dev -y
+sudo apt-get install libboost1.37-dev -y
+sudo apt-get install libssl1.0-dev
+sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler
+```
+
 To Build
 ---------------------
 
